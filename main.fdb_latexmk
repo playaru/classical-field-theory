@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1748364948.40689 "d:/LaTeX Files/Notas GFTinho/main.tex" "main.pdf" "main" 1748364949.84309 0
+["pdflatex"] 1748367037.53248 "d:/LaTeX Files/Notas GFTinho/classical-field-theory/main.tex" "main.pdf" "main" 1748367039.06606 0
   "C:/Users/User/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1746465037 278213 95657c73472c04ba4ea8a9fe260c4682 ""
   "C:/Users/User/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1698160636 24141478 560e2101ab8065f9fc2309e7eb206f0d ""
   "C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ec.enc" 1256929440 2375 baa924870cfb487815765f9094cf3728 ""
@@ -175,9 +175,9 @@
   "C:/Users/User/AppData/Local/Programs/MiKTeX/tex/latex/tools/calc.sty" 1686255640 10214 75bcd28386d4b4b9f28b2aff3cea7b24 ""
   "C:/Users/User/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "C:/Users/User/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1656236890 56148 51a9a8571c07b9921892ae11063ae853 ""
-  "d:/LaTeX Files/Notas GFTinho/main.tex" 1748364947 1336 0232344593ed053614b1f943b693b42d ""
-  "main.aux" 1748364949 663 dee00fca1e2c7332230a0a9258c7380f "pdflatex"
-  "main.out" 1748364949 103 9814c2d956916adb9290eca4e25c967a "pdflatex"
+  "d:/LaTeX Files/Notas GFTinho/classical-field-theory/main.tex" 1748364947 1336 0232344593ed053614b1f943b693b42d ""
+  "main.aux" 1748367038 663 dee00fca1e2c7332230a0a9258c7380f "pdflatex"
+  "main.out" 1748367038 103 9814c2d956916adb9290eca4e25c967a "pdflatex"
   "main.tex" 1748364947 1336 0232344593ed053614b1f943b693b42d ""
   (generated)
   "main.aux"
