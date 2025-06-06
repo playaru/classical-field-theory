@@ -3,10 +3,7 @@
 \documentclass[12pt,a4paper]{article}
 
 % Packages
-%\usepackage[utf8]{inputenc}        % Padrão
-\usepackage[T1]{fontenc}           % Padrão tbm
-\usepackage[brazilian]{babel}
-\usepackage{lmodern}               % Fix Latex dummy fonts
+\usepackage[brazilian]{babel}           % Fix Latex dummy fonts
 \usepackage{amsmath,amssymb,amsfonts,mathtools} % Math
 \usepackage{physics}               % Handy shorthand for derivatives, bras/kets, etc.
 \usepackage{tensor}                % Indexed tensors
@@ -25,6 +22,12 @@
 \usepackage{titling}               % More control over the title
 \usepackage{fontspec}
 \usepackage{lettrine}
+\usepackage{csquotes}
+\usepackage{footnote}
+
+%bib
+\usepackage[backend=biber, style=numeric-comp, sorting=none]{biblatex}
+\addbibresource{refs.bib}
 
 %-------------------------------------Setup Visual---------------------------------------------%
 \setlength{\parskip}{0.5em}       % Space between paragraphs
@@ -35,14 +38,14 @@
 \lhead{GFTinho}
 \cfoot{\thepage}
 \titleformat{\section}{\large\bfseries}{\thesection.}{1em}{}
-\titleformat{\subsection}{\normalsize\bfseries}{\thesubsection}{1em}{}
+\titleformat{\subsection}{\normalsize\bfseries}{\thesubsection.}{1em}{}
 
 % --- CONFIGURAÇÃO DA FONTE ORNAMENTADA (MÉTODO LOCAL) ---
 % Usamos a opção "Path" para indicar a pasta onde a fonte está.
 % O comando agora procura pelo NOME DO ARQUIVO, não pelo nome da família.
 \newfontfamily{\capitular}[
-  Path = ./,  %<-- AQUI ESTÁ O SEGREDO! Indica a subpasta.
-  Extension = .ttf %<-- Opcional, mas boa prática.
+  Path = ./,  % Indica a subpasta.
+  Extension = .ttf % Opcional, mas boa prática.
 ]{Woodcut1}
 
 
@@ -101,28 +104,51 @@
 
 \lettrine[lines=3, nindent=0.1em]{\capitular\addfontfeature{Color=AA0000}C}{omeçar} os estudos
 em Teoria Clássica de Campos com Relatividade Especial, além de ser usual nos livros mais adotados
-em cursos univesitários, é fundamental do ponto de vista da construção das ideias.
+em cursos univesitários, é fundamental para a construção da base conceitual e do \textit{framework}
+matemático necessário no tratamento de campos clássicos para as interações fundamentais.
+Talvez o principal e mais famoso exemplo de um campo clássico desse tipo é o campo eletromagnético, que,
+em sua natureza, é governado por leis físicas que são covariantes sob Transformações de Lorentz
+(i.e., são as mesmas após realizarmos mudanças de coordenadas entre referenciais inerciais).
+Começaremos agora a introduzir os conceitos mais importantes de relatividade especial para o tratamento de
+campos clássicos fundamentais.
 
+\subsection{Postulados da Relatividade Especial e Espaço-Tempo}
+Enunciados por Einstein em 1905, ao tratar, justamente,
+de questões fundamentais envolvendo o campo eletromagnético\cite{einstein1905}, os postulados da relatividade
+especial podem ser adaptados em linguagem moderna da seguinte forma:
+\begin{enumerate}[label=\Roman*.]
+  \item As leis da Física são as mesmas para todos referenciais inerciais.
+  \item A velocidade da luz é finita, com valor definido $c$ para todo e qualquer referencial.
+\end{enumerate}
 
-\pagebreak
+Estes são os alicerces a partir dos quais construiremos toda a teoria. Usaremos principalmente o postulado (I)
+para nos guiar a respeito do estabelecimento de qualquer framework matématico que viermos a desenvolver. Para
+entender a motivação por trás dos postulados, vale conferir o primeiro parágrafo em \cite{einstein1905}.
 
+Devido aos postulados, surge de forma natural um tratamento equivalente de espaço e tempo na relatividade
+especial, antes vistos como dois entes totalmente separados e independentes. Em outras palavras, devido à demanda
+de que as leis da Física sejam covariantes por Lorentz, acabamos, inevitavelmente, por tratar espaço e tempo de
+forma equivalente, fundindo-os no mesmo objeto que denominamos de \enquote{espaço-tempo}. 
 
-
-
-
-
-
-
-
-
-
-
-
-
+Nessa nova forma de tratar o espaço e o tempo, de modo que as leis Físicas não mudem sob mudanças de referenciais
+inerciais, acabamos introduzindo uma nova métrica, isto é, uma nova forma de \enquote{medir distâncias} nesse novo
+\enquote{espaço} construído a partir dessa \enquote{fusão} entre espaço e tempo. Essa nova métrica é dada
+por um escalar\footnote{\enquote{Escalar} empregado no sentido de ser um invariante por Lorentz, que significa que é um número que permanece o mesmo após mudarmos entre referenciais inerciais.}
+$\mathrm{ds^2}$, que não é para ser entendido como \enquote{um número pequeno elevado ao quadrado}, mas sim 
+como um objeto por si só. Em coordenadas cartesianas para o espaço-tempo, esse escalar é dado por:
+\begin{equation*}
+  ds^2 = -dt^2 + d\vec{x}^2
+\end{equation*}
+onde $d\vec{x}^2$ representa $dx^2 + dy^2 + dz^2$ para o espaço tridimensional (notação boba). Novamente,
+$\mathrm{dt}$ e $\mathrm{dx}$ não representam \enquote{infinitesimais}, mas podem ser entendidos como tal a um primeiro momento;
+mais adiante pretendemos esclarecer do real significado matemático que esses objetos carregam, quando formos
+descrever a métrica de forma tensorial\footnote{Uma generalização de matrizes, ou melhor, de vetores; nada assustador.}.
 
 
 \section{Introdução ao Princípio Variacional}
 
 \section{Lagrangiana do Campo Eletromagnético}
 
+
+\printbibliography
 \end{document}
