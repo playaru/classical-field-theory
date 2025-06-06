@@ -37,8 +37,15 @@
 \rhead{Notas em Teoria Clássica de Campos}
 \lhead{GFTinho}
 \cfoot{\thepage}
+
+% Títulos, Subtítulos, etc.
 \titleformat{\section}{\large\bfseries}{\thesection.}{1em}{}
 \titleformat{\subsection}{\normalsize\bfseries}{\thesubsection.}{1em}{}
+\titleformat{name=\section, numberless}
+  {\large\bfseries\centering} % Formato do título: grande, negrito e centralizado
+  {}                         % Rótulo (não usado em \section*)
+  {0pt}                      % Espaço entre rótulo e título
+  {}                         % Código a ser inserido antes do título
 
 % --- CONFIGURAÇÃO DA FONTE ORNAMENTADA (MÉTODO LOCAL) ---
 % Usamos a opção "Path" para indicar a pasta onde a fonte está.
@@ -97,6 +104,30 @@
     %----------------------------------------------------------------------------------------
 \end{titlepage}
 
+\newpage
+
+\section*{Convenções e Notação}
+\addcontentsline{toc}{section}{Convenções e Notação}
+
+
+\begin{description}[
+    font=\bfseries,       % Deixa os termos em negrito
+    style=unboxed,          % Alinha a descrição de forma limpa
+    leftmargin=4.5cm,       % Define um espaço de 4.5cm para os termos
+    labelsep=1cm            % Define um espaço de 1cm entre o termo e a descrição
+]
+    \item[Soma de Einstein] \hspace{0.2cm}$\displaystyle x_{\mu}y^{\mu} \equiv \sum_{\mu=0}^{3}x_{\mu}y^{\mu}$
+    
+    \item[Assinatura] \hspace{1.6cm}(-,+,+,+)
+    
+    \item[Unidades Naturais] $c = \epsilon_0 = \mu_0 = 1$.
+    
+    \item[Índices] \hspace{2.4cm}Índices gregos: 0,1,2,3; Índices latinos: 1,2,3.
+    \item[Derivadas Parciais] $\displaystyle \partial_{\mu} \equiv \pdv{}{x^{\mu}}$ 
+  \end{description}
+
+\newpage
+
 \tableofcontents % Gera o sumário
 \newpage % Começa o conteúdo na página seguinte
 
@@ -128,27 +159,59 @@ entender a motivação por trás dos postulados, vale conferir o primeiro parág
 Devido aos postulados, surge de forma natural um tratamento equivalente de espaço e tempo na relatividade
 especial, antes vistos como dois entes totalmente separados e independentes. Em outras palavras, devido à demanda
 de que as leis da Física sejam covariantes por Lorentz, acabamos, inevitavelmente, por tratar espaço e tempo de
-forma equivalente, fundindo-os no mesmo objeto que denominamos de \enquote{espaço-tempo}. 
+forma equivalente, fundindo-os no mesmo objeto que denominamos de \enquote{espaço-tempo}. Cada ponto desse
+espaço-tempo, assinalado pelas coordenadas $(t,\vec{x})$, ou $(t,r,\theta,\varphi)$, ou qualquer outro sistema genérico de
+coordenadas é chamado de \enquote{Evento} nesse espaço-tempo.
 
 Nessa nova forma de tratar o espaço e o tempo, de modo que as leis Físicas não mudem sob mudanças de referenciais
 inerciais, acabamos introduzindo uma nova métrica, isto é, uma nova forma de \enquote{medir distâncias} nesse novo
 \enquote{espaço} construído a partir dessa \enquote{fusão} entre espaço e tempo. Essa nova métrica é dada
-por um escalar\footnote{\enquote{Escalar} empregado no sentido de ser um invariante por Lorentz, que significa que é um número que permanece o mesmo após mudarmos entre referenciais inerciais.}
-$\mathrm{ds^2}$, que não é para ser entendido como \enquote{um número pequeno elevado ao quadrado}, mas sim 
-como um objeto por si só. Em coordenadas cartesianas para o espaço-tempo, esse escalar é dado por:
+por $\mathrm{ds^2}$, que não é para ser entendida como \enquote{um número pequeno elevado ao quadrado}, mas sim 
+como um objeto por si só, que dita a medida das \enquote{distâncias} nesse espaço-tempo.
+Em coordenadas cartesianas para um espaço-tempo plano, a métrica é dada por:
 \begin{equation*}
   ds^2 = -dt^2 + d\vec{x}^2
 \end{equation*}
 onde $d\vec{x}^2$ representa $dx^2 + dy^2 + dz^2$ para o espaço tridimensional (notação boba). Novamente,
 $\mathrm{dt}$ e $\mathrm{dx}$ não representam \enquote{infinitesimais}, mas podem ser entendidos como tal a um primeiro momento;
-mais adiante pretendemos esclarecer do real significado matemático que esses objetos carregam, quando formos
+mais adiante, pretendemos esclarecer o real significado matemático que esses objetos carregam, quando formos
 descrever a métrica de forma tensorial\footnote{Uma generalização de matrizes, ou melhor, de vetores; nada assustador.}.
 
+\subsection{Invariância do Intervalo}
+
+Em espaços euclidianos, integramos um elemento de arco\footnote{Obtido a partir da métrica euclidiana: $ds = \sqrt{dx^2 + dy^2}$ , que é a raiz quadrada da métrica euclidiana.} $\mathrm{ds}$
+ao longo de uma curva $C$ para obtermos o comprimento de arco dessa curva. De forma completamente análoga,
+o comprimento de arco de uma curva $C$ no espaço-tempo também é dado pela integral do elemento de arco\footnote{Mais adiante mostraremos como obter o elemento de arco a partir da métrica; adiantamos que não é tão trivial quanto em espaços euclidianos, onde basta tirar a raiz quadrada da métrica. O espaço-tempo guarda algumas nuâncias...} 
+$\mathrm{ds}$ ao longo da mesma:
+\begin{equation}
+  S \equiv \int_{C} ds 
+\end{equation}
+
+E as semelhanças não param por aí: assim como distâncias são preservadas em espaços euclidianos ao mudarmos de sistema de coordenadas, o comprimento
+de um arco no espaço-tempo é o mesmo, independente do sistema de coordenadas adotado:
+\begin{equation}
+  S = S' 
+  \label{2}
+\end{equation}
+para toda curva $C$ nesse espaço-tempo, e para quaisquer sistemas de coordenadas que se relacionam por
+transformações de Lorentz (\enquote{com linha} e \enquote{sem linha} denotam referenciais diferentes). Para
+provar a afirmação (\ref{2}), considere a forma explícita da transformação de Lorentz que faz a passagem de
+um referencial que observa os eventos do espaço-tempo com as coordenadas $\mathrm{(t,x)}$ para um outro que
+os observa com as coordenadas $\mathrm{(t',x')}$.
+\begin{equation*}
+  \Lambda = \begin{pmatrix*} \mathrm{\gamma} &  \mathrm{-\gamma v}\\
+                          \mathrm{-\gamma v} & \mathrm{\gamma}  \end{pmatrix*}
+\end{equation*}
+onde $\mathrm{v}$ é a velocidade relativa entre os dois referenciais, e $\gamma$ é o fator de Lorentz, dado por
+$\gamma = \mathrm{(1-v^2)^{-1/2}}$. Considere então a métrica descrita pelos referenciais sem linha e com linha:
+\begin{equation*}
+  ds^2 = -dt^2 + dx^2 \;\;\;\;;\;\;\;\;\; ds^{\prime\; 2} = -dt^{\prime\; 2} + dx^{\prime\; 2}
+\end{equation*}
 
 \section{Introdução ao Princípio Variacional}
 
 \section{Lagrangiana do Campo Eletromagnético}
 
-
+\newpage
 \printbibliography
 \end{document}

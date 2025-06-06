@@ -1,17 +1,17 @@
 # Fdb version 4
-["biber main"] 1749238329.50673 "main.bcf" "main.bbl" "main" 1749241028.09252 0
-  "main.bcf" 1749241027 107225 80d2fada26e47c51f694ed8fc834261c "xelatex"
+["biber main"] 1749248593.95058 "main.bcf" "main.bbl" "main" 1749253717.37877 0
+  "main.bcf" 1749253716 107225 80d2fada26e47c51f694ed8fc834261c "xelatex"
   "refs.bib" 1749237648 252 64031a3017c0bd939e019b6fb7ae750b ""
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["xdvipdfmx"] 1749241027.69034 "main.xdv" "main.pdf" "main" 1749241028.10865 0
-  "main.xdv" 1749241027 47788 f7d4aa43e17645ad9455e2e8f76a2caf "xelatex"
+["xdvipdfmx"] 1749253716.96976 "main.xdv" "main.pdf" "main" 1749253717.39469 0
+  "main.xdv" 1749253716 70128 3c372dce30b276663ceff4cc89e437e5 "xelatex"
   (generated)
   "main.pdf"
   (rewritten before read)
-["xelatex"] 1749241025.04823 "d:/LaTeX Files/Notas GFTinho/classical-field-theory/main.tex" "main.xdv" "main" 1749241028.09309 0
+["xelatex"] 1749253714.07492 "d:/LaTeX Files/Notas GFTinho/classical-field-theory/main.tex" "main.xdv" "main" 1749253717.37939 0
   "C:/Users/User/AppData/Local/MiKTeX/miktex/data/le/xetex/xelatex.fmt" 1717711817 37448366 be26de8b12ea5ca6dfe7d16b9331eef1 ""
   "C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/tfm/adobe/zapfding/pzdr.tfm" 1136783054 1528 7e12f4c0fcf5a072cebdcfbfc610f54c ""
   "C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/tfm/public/amsfonts/cmextra/cmbsy5.tfm" 1233951848 1120 1e8878807317373affa7f7bba4cf2f6a ""
@@ -215,12 +215,12 @@
   "C:/Users/User/AppData/Local/Programs/MiKTeX/tex/latex/tools/calc.sty" 1686255640 10214 75bcd28386d4b4b9f28b2aff3cea7b24 ""
   "C:/Users/User/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "C:/Users/User/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1656236890 56148 51a9a8571c07b9921892ae11063ae853 ""
-  "d:/LaTeX Files/Notas GFTinho/classical-field-theory/main.tex" 1749241024 8320 0dfae1d035f3ff5d4da5daf5c088513f ""
-  "main.aux" 1749241027 1546 16a76bf8083b0b55c1999199bf0796b7 "xelatex"
-  "main.bbl" 1749238331 1701 9847c6da81c7507991080c6470f2f378 "biber main"
-  "main.run.xml" 1749241027 2377 9a194412545352a861cba3db285e8bb0 "xelatex"
-  "main.tex" 1749241024 8320 0dfae1d035f3ff5d4da5daf5c088513f ""
-  "main.toc" 1749241027 457 057469c01ded078b8e732304cc22036e "xelatex"
+  "d:/LaTeX Files/Notas GFTinho/classical-field-theory/main.tex" 1749253713 11772 8e60c644821090092ea9ff0a34837d18 ""
+  "main.aux" 1749253716 1897 813c23d86d254c0c1fccda49b9bd5641 "xelatex"
+  "main.bbl" 1749248596 1701 9847c6da81c7507991080c6470f2f378 "biber main"
+  "main.run.xml" 1749253716 2377 9a194412545352a861cba3db285e8bb0 "xelatex"
+  "main.tex" 1749253713 11772 8e60c644821090092ea9ff0a34837d18 ""
+  "main.toc" 1749253716 613 f290c8078262d7ac8eb4ea5b104c8e0b "xelatex"
   (generated)
   "main.aux"
   "main.bcf"
