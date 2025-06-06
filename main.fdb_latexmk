@@ -1,10 +1,10 @@
 # Fdb version 4
-["xdvipdfmx"] 1749229293.02502 "main.xdv" "main.pdf" "main" 1749229293.49203 0
-  "main.xdv" 1749229292 14744 13a4ce01bcbdb277ef3939e941e3e866 "xelatex"
+["xdvipdfmx"] 1749229353.08071 "main.xdv" "main.pdf" "main" 1749229353.44466 0
+  "main.xdv" 1749229352 14744 913d8265e8afcefd7e4b75548f12f251 "xelatex"
   (generated)
   "main.pdf"
   (rewritten before read)
-["xelatex"] 1749229291.16146 "d:/LaTeX Files/Notas GFTinho/classical-field-theory/main.tex" "main.xdv" "main" 1749229293.47872 0
+["xelatex"] 1749229351.14403 "d:/LaTeX Files/Notas GFTinho/classical-field-theory/main.tex" "main.xdv" "main" 1749229353.43171 0
   "C:/Users/User/AppData/Local/MiKTeX/miktex/data/le/xetex/xelatex.fmt" 1717711817 37448366 be26de8b12ea5ca6dfe7d16b9331eef1 ""
   "C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/tfm/adobe/zapfding/pzdr.tfm" 1136783054 1528 7e12f4c0fcf5a072cebdcfbfc610f54c ""
   "C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/tfm/public/amsfonts/symbols/msam10.tfm" 1233951854 916 f87d7c45f9c908e672703b83b72241a3 ""
@@ -182,10 +182,10 @@
   "C:/Users/User/AppData/Local/Programs/MiKTeX/tex/latex/tools/calc.sty" 1686255640 10214 75bcd28386d4b4b9f28b2aff3cea7b24 ""
   "C:/Users/User/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "C:/Users/User/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1656236890 56148 51a9a8571c07b9921892ae11063ae853 ""
-  "d:/LaTeX Files/Notas GFTinho/classical-field-theory/main.tex" 1749229290 5180 daf95bcfd26e4dc51fe35d0ab8381b71 ""
-  "main.aux" 1749229292 1076 2c0ee11bc896def05a177180ce0f0fd1 "xelatex"
-  "main.tex" 1749229290 5180 daf95bcfd26e4dc51fe35d0ab8381b71 ""
-  "main.toc" 1749229292 340 5abbc66f9684c46c962d691eef859a10 "xelatex"
+  "d:/LaTeX Files/Notas GFTinho/classical-field-theory/main.tex" 1749229350 5164 3ea694f1c2efeacb5309526e0e5ac727 ""
+  "main.aux" 1749229352 1076 2c0ee11bc896def05a177180ce0f0fd1 "xelatex"
+  "main.tex" 1749229350 5164 3ea694f1c2efeacb5309526e0e5ac727 ""
+  "main.toc" 1749229352 340 5abbc66f9684c46c962d691eef859a10 "xelatex"
   (generated)
   "main.aux"
   "main.log"
