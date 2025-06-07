@@ -173,14 +173,14 @@ coordenadas é chamado de \textbf{evento} nesse espaço-tempo.
 Nessa nova forma de tratar o espaço e o tempo, de modo que as leis Físicas não mudem sob mudanças de referenciais
 inerciais, acabamos introduzindo uma \textbf{nova métrica}, isto é, uma nova forma de \enquote{medir distâncias} nesse novo
 \enquote{espaço} construído a partir dessa \enquote{fusão} entre espaço e tempo. Essa nova métrica é dada
-por $\mathrm{ds^2}$, que não é para ser entendida como \enquote{um número pequeno elevado ao quadrado}, mas sim 
-como um objeto por si só, que dita a medida das \enquote{distâncias} nesse espaço-tempo.
+por $ds^2$, que não é para ser entendida como \enquote{um número pequeno elevado ao quadrado}, mas sim 
+como um objeto por si só, que dita as relações geométricas de ângulos e \enquote{distâncias} nesse espaço-tempo.
 Em coordenadas cartesianas para um espaço-tempo plano, sua métrica é dada por:
 \begin{equation*}
   ds^2 = -dt^2 + d\vec{x}^2
 \end{equation*}
 onde $d\vec{x}^2$ representa $dx^2 + dy^2 + dz^2$ para o espaço tridimensional (notação boba). Novamente,
-$\mathrm{dt}$ e $\mathrm{dx}$ não representam \enquote{infinitesimais}, mas podem ser entendidos como tal num primeiro momento;
+$dt$ e $dx$ não representam \enquote{infinitesimais}, mas podem ser entendidos como tal num primeiro momento;
 mais adiante, pretendemos esclarecer o real significado matemático que esses objetos carregam, quando formos
 descrever a métrica de forma tensorial\footnote{Uma generalização de matrizes, ou melhor, de vetores; nada assustador.}.
 
@@ -192,14 +192,14 @@ onde $dx^0 = dt$; $dx^i$ correspondendo a $dx,dy,dz$ para $i=1, 2, 3$, respectiv
 
 \subsection{Invariância do Comprimento de Arco}
 
-Em espaços euclidianos, integramos um \textbf{elemento de arco}\footnoteB{Obtido a partir da métrica euclidiana: $ds = \sqrt{dx^2 + dy^2}$ , que é a raiz quadrada da métrica euclidiana.} $\mathrm{ds}$
+Em espaços euclidianos, integramos um \textbf{elemento de arco}\footnoteB{Obtido a partir da métrica euclidiana: $ds = \sqrt{dx^2 + dy^2}$ , que é a raiz quadrada da métrica euclidiana.} $ds$
 ao longo de uma curva $C$ para obtermos o \textbf{comprimento de arco} dessa curva. De forma completamente análoga,
-isso também vale para espaços-tempos\footnote{Mais adiante mostraremos como obter o elemento de arco a partir da métrica em espaços-tempos; adiantamos que não é tão trivial quanto em espaços euclidianos, onde basta tirar a raiz quadrada da métrica. O espaço-tempo guarda algumas nuâncias...}:
+podemos extender essa noção para espaços-tempos:
 \begin{equation}
   S \equiv \int_{C} ds .
 \end{equation}
 
-E as semelhanças não param por aí: assim como distâncias são preservadas em espaços euclidianos ao mudarmos de sistema de coordenadas, o comprimento
+E as semelhanças continuam (por enquanto): assim como distâncias são preservadas em espaços euclidianos ao mudarmos de sistema de coordenadas, o comprimento
 de um arco no espaço-tempo é o mesmo, independente do sistema de coordenadas adotado, ou seja:
 \begin{equation}
   S = S' 
@@ -210,9 +210,12 @@ transformações de Lorentz (\enquote{com linha} e \enquote{sem linha} na equaç
 
 Para provar a afirmação em (\ref{2}), é suficiente mostrar que o elemento
 de arco $ds$ é o mesmo que seu correspondente $ds'$ no outro referencial em cada ponto da curva. Mas como temos posse apenas da métrica,
-e sabemos que, de uma forma padronizada para ambos os referenciais, os elementos de arco $ds$ e $ds'$ são obtidos a partir das suas respectivas métricas, basta mostrar que:
+e sabemos que, de uma forma padronizada (mesmo que até então desconhecida)\footnote{Mais adiante mostraremos como obter o elemento de arco a partir da métrica em espaços-tempos;
+adiantamos que não é tão trivial quanto em espaços euclidianos, onde basta tirar a raiz quadrada da
+métrica. O espaço-tempo guarda algumas nuâncias...}, os elementos de arco $ds$ e $ds'$ são obtidos a
+partir das suas respectivas métricas, basta mostrar que:
 \begin{equation*}
-  ds^2 = ds^{\prime \; 2} \Rightarrow ds = ds' \Rightarrow S = S'
+  ds^2 = ds^{\prime \; 2}.
 \end{equation*}
 Sendo essa uma condição suficiente para provar a invariância do arco de uma curva situada no
 espaço-tempo. 
@@ -284,7 +287,7 @@ $C$ ligando dois pontos, o comprimento de arco é invariante por Lorentz, fica e
 dois eventos também é invariante por Lorentz, por se tratar de um caso particular do comprimento de arco.
 
 Passada essa parte mais matemática sobre a invariância do comprimento de arco no espaço-tempo, vamos agora 
-à interpretação física desse resultado, assim como a interpretação do próprio comprimento de arco $S$, e consequentemente,
+à interpretação física desse resultado, assim como a interpretação do próprio comprimento de arco $S$, e também
 a do intervalo $\Delta S$.
 \subsection{A Física do Intervalo}
 \section{Introdução ao Princípio Variacional}
