@@ -4,7 +4,7 @@
 
 % Packages
 \usepackage[brazilian]{babel}           % Fix Latex dummy fonts
-\usepackage{amsmath,amssymb,amsfonts,mathtools} % Math
+\usepackage{amsmath,amssymb,amsfonts,mathtools,amsthm} % Math
 \usepackage{physics}               % Handy shorthand for derivatives, bras/kets, etc.
 \usepackage{tensor}                % Indexed tensors
 \usepackage{authblk}               % For clean multiple-author formatting
@@ -208,7 +208,7 @@ e sabemos que, de uma forma padronizada para ambos os referenciais, os elementos
 \begin{equation*}
   ds^2 = ds^{\prime \; 2} \Rightarrow ds = ds' \Rightarrow S = S'
 \end{equation*}
-Sendo essa uma condição suficiente (apesar de não necessária) para provar a invariância do arco de uma curva situada no
+Sendo essa uma condição suficiente para provar a invariância do arco de uma curva situada no
 espaço-tempo. 
 Considere então a métrica descrita pelos referenciais sem linha e com linha:
 \begin{equation}
@@ -234,33 +234,47 @@ x^{\mu'} = \Lambda^{\mu'}_{\mu} x^{\mu}
 que é basicamente a atuação da matriz de $\Lambda$ nos vetores coluna coordenados escrita em termos das componentes (c.f. \ref{Conv_e_Not}{§ Convenções e Notação}, p. 1).
 
 Assim, obtemos:
-\begin{gather*}
+\[
   \left.
   \begin{aligned}
-    &   t' = \gamma(t - \mathrm{v}t) \\
+    &   t' = \gamma(t - \mathrm{v}x) \\
     &   x' = \gamma(-\mathrm{v}t + x) 
   \end{aligned}\;\;
   \right\rangle\;\;\;\;
   \begin{aligned}
-    & dt' = \gamma(-\mathrm{v}dt +dx)\\
-    & dx' = \gamma(dt - \mathrm{v}dx)
+    & dt' = \gamma(dt - \mathrm{v}dx)\\
+    & dx' = \gamma(-\mathrm{v}dt +dx)
   \end{aligned}\\\\
   \therefore 
   \left\{\;
   \begin{aligned}
-    & dt^{\prime\;2} = \gamma^2(\mathrm{v}^2dt^2 + dx^2 - 2\mathrm{v}dtdx)\\
-    & dx^{\prime\;2} = \gamma^2(dt^2 + \mathrm{v}^2dx^2 - 2\mathrm{v}dtdx)
+    & dt^{\prime\;2} = \gamma^2(dt^2 + \mathrm{v}^2dx^2 - 2\mathrm{v}dtdx)\\
+    & dx^{\prime\;2} = \gamma^2(\mathrm{v}^2dt^2 + dx^2 - 2\mathrm{v}dtdx)
   \end{aligned}\right.
-\end{gather*}
-
+\]
 Inserindo essas expressões na equação (\ref{eq:intervalos}) para o referencial com linha, concluímos:
-\begin{align}
-  ds^{\prime\; 2} &= -dt^{\prime\; 2} + dx^{\prime\; 2} \nonumber \\
-                  &= -\gamma^2(\mathrm{v}^2dt^2 + dx^2 - 2\mathrm{v}dtdx) + \gamma^2(dt^2 + \mathrm{v}^2dx^2 - 2\mathrm{v}dtdx) \nonumber \\
-                  &=  
-\end{align}
+\begin{proof}[]
+  \begin{align}
+    ds^{\prime\; 2} &= -dt^{\prime\; 2} + dx^{\prime\; 2} \nonumber \\
+    &= -\gamma^2(dt^2 + \mathrm{v}^2dx^2 - \cancel{2\mathrm{v}dtdx}) + \gamma^2(\mathrm{v}^2dt^2 + dx^2 - \cancel{2\mathrm{v}dtdx}) \nonumber \\
+    &=  \underbrace{\gamma^2 (1-\mathrm{v}^2)}_{= 1}(-dt^2 + dx^2) \nonumber\\
+    &= -dt^2 + dx^2 \nonumber \\
+    &= ds^2 \qedhere
+  \end{align}
+\end{proof}
+Com isso provamos que a métrica é idêntica para referenciais que se relacionam por transformações de
+Lorentz\footnote{O termo \textit{referenciais} é usado, muitas vezes, de forma equivalente a \textit{sistemas de coordenadas}, pois o segundo é a descrição matemática do conceito físico do primeiro em relatividade.},
+o que é suficiente para provar a afirmação em \ref{eq:intervalos}.
 
+Por último, no caso particular em que essa curva $C$ é uma reta ligando dois pontos fixos $A = (t_A,x_A)$ e $B=(t_B,x_B)$ no espaço-tempo,
+escrevemos:
 
+\begin{equation}
+  {\Delta S_{AB}}^2 = -(t_B - t_A)^2 + (x_B - x_A)^2 = -\Delta t^2 + \Delta x^2
+\end{equation}
+e chamamos essa quantidade de \textbf{intervalo} entre os dois eventos $A$ e $B$. Como foi provado que, para uma mesma curva
+$C$ ligando dois pontos, o comprimento de arco é invariante por Lorentz, fica evidente que o intervalo entre
+dois eventos também é invariante por Lorentz, por se tratar de um caso particular do mais geral já que foi provado.
 \section{Introdução ao Princípio Variacional}
 
 \section{Lagrangiana do Campo Eletromagnético}

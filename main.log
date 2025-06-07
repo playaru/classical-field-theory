@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (MiKTeX 23.10) (preloaded format=xelatex 2024.6.6)  6 JUN 2025 23:33
+This is XeTeX, Version 3.141592653-2.6-0.999995 (MiKTeX 23.10) (preloaded format=xelatex 2024.6.6)  7 JUN 2025 00:34
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -149,6 +149,17 @@ Package: mhsetup 2021/03/18 v1.4 programming setup (MH)
 \l_MT_below_shortintertext_sep=\dimen159
 \xmathstrut@box=\box53
 \xmathstrut@dim=\dimen160
+) (C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/amscls\amsthm.sty
+Package: amsthm 2020/05/29 v2.20.6
+\thm@style=\toks23
+\thm@bodyfont=\toks24
+\thm@headfont=\toks25
+\thm@notefont=\toks26
+\thm@headpunct=\toks27
+\thm@preskip=\skip57
+\thm@postskip=\skip58
+\thm@headsep=\skip59
+\dth@everypar=\toks28
 ) (C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/physics\physics.sty
 Package: physics 
  (C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/l3packages/xparse\xparse.sty (C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/l3kernel\expl3.sty
@@ -164,15 +175,15 @@ File: l3backend-xetex.def 2023-04-19 L3 backend support: XeTeX
 Package: xparse 2023-08-29 L3 Experimental document command parser
 )) (C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/tensor\tensor.sty
 Package: tensor 2023/07/18 v2.2 tensor indices package (PGR)
-\tnsr@Sps=\toks23
-\tnsr@Sbs=\toks24
-\tnsr@Spe=\toks25
-\tnsr@Sbe=\toks26
-\ncld@Mno=\toks27
+\tnsr@Sps=\toks29
+\tnsr@Sbs=\toks30
+\tnsr@Spe=\toks31
+\tnsr@Sbe=\toks32
+\ncld@Mno=\toks33
 ) (C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/preprint\authblk.sty
 Package: authblk 2001/02/27 1.3 (PWD)
-\affilsep=\skip57
-\@affilsep=\skip58
+\affilsep=\skip60
+\@affilsep=\skip61
 \c@Maxaffil=\count277
 \c@authors=\count278
 \c@affil=\count279
@@ -286,7 +297,7 @@ Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
 )
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 285.
 )
-\Hy@SectionHShift=\skip59
+\Hy@SectionHShift=\skip62
 ) (C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.sty
 Package: geometry 2020/01/02 v5.9 Page Geometry
  (C:\Users\User\AppData\Local\Programs\MiKTeX\tex/generic/iftex\ifvtex.sty
@@ -303,7 +314,7 @@ Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 \Gm@layoutheight=\dimen170
 \Gm@layouthoffset=\dimen171
 \Gm@layoutvoffset=\dimen172
-\Gm@dimlist=\toks28
+\Gm@dimlist=\toks34
  (C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.cfg)) (C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/bookmark\bookmark.sty
 Package: bookmark 2023-12-10 v1.31 PDF bookmarks (HO)
  (C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/bookmark\bkm-dvipdfm.def
@@ -326,26 +337,26 @@ File: xetex.def 2022/09/22 v5.0n Graphics/color driver for xetex
 \Gin@req@width=\dimen174
 ) (C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/fancyhdr\fancyhdr.sty
 Package: fancyhdr 2025/02/07 v5.2 Extensive control of page headers and footers
-\f@nch@headwidth=\skip60
-\f@nch@offset@elh=\skip61
-\f@nch@offset@erh=\skip62
-\f@nch@offset@olh=\skip63
-\f@nch@offset@orh=\skip64
-\f@nch@offset@elf=\skip65
-\f@nch@offset@erf=\skip66
-\f@nch@offset@olf=\skip67
-\f@nch@offset@orf=\skip68
-\f@nch@height=\skip69
-\f@nch@footalignment=\skip70
-\f@nch@widthL=\skip71
-\f@nch@widthC=\skip72
-\f@nch@widthR=\skip73
-\@temptokenb=\toks29
+\f@nch@headwidth=\skip63
+\f@nch@offset@elh=\skip64
+\f@nch@offset@erh=\skip65
+\f@nch@offset@olh=\skip66
+\f@nch@offset@orh=\skip67
+\f@nch@offset@elf=\skip68
+\f@nch@offset@erf=\skip69
+\f@nch@offset@olf=\skip70
+\f@nch@offset@orf=\skip71
+\f@nch@height=\skip72
+\f@nch@footalignment=\skip73
+\f@nch@widthL=\skip74
+\f@nch@widthC=\skip75
+\f@nch@widthR=\skip76
+\@temptokenb=\toks35
 ) (C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/enumitem\enumitem.sty
 Package: enumitem 2025/02/06 v3.11 Customized lists
-\labelindent=\skip74
+\labelindent=\skip77
 \enit@outerparindent=\dimen175
-\enit@toks=\toks30
+\enit@toks=\toks36
 \enit@inbox=\box56
 \enit@count@id=\count298
 \enitdp@description=\count299
@@ -374,7 +385,7 @@ Package bm Info: No bold for \U/msa/m/n, using \pmb.
 Package bm Info: No bold for \U/msb/m/n, using \pmb.
 LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 149.
 ) (C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/pgf/frontendlayer\tikz.sty (C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/pgf/basiclayer\pgf.sty (C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\pgfrcs.sty (C:\Users\User\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfutil-common.tex
-\pgfutil@everybye=\toks31
+\pgfutil@everybye=\toks37
 \pgfutil@tempdima=\dimen176
 \pgfutil@tempdimb=\dimen177
 ) (C:\Users\User\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfutil-latex.def
@@ -386,10 +397,10 @@ Package: pgf 2023-01-15 v3.1.10 (3.1.10)
  (C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/pgf/basiclayer\pgfcore.sty (C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/pgf/systemlayer\pgfsys.sty (C:\Users\User\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsys.code.tex
 Package: pgfsys 2023-01-15 v3.1.10 (3.1.10)
  (C:\Users\User\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfkeys.code.tex
-\pgfkeys@pathtoks=\toks32
-\pgfkeys@temptoks=\toks33
+\pgfkeys@pathtoks=\toks38
+\pgfkeys@temptoks=\toks39
  (C:\Users\User\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfkeyslibraryfiltered.code.tex
-\pgfkeys@tmptoks=\toks34
+\pgfkeys@tmptoks=\toks40
 ))
 \pgf@x=\dimen178
 \pgf@y=\dimen179
@@ -407,9 +418,9 @@ Package: pgfsys 2023-01-15 v3.1.10 (3.1.10)
 \c@pgf@countb=\count301
 \c@pgf@countc=\count302
 \c@pgf@countd=\count303
-\t@pgf@toka=\toks35
-\t@pgf@tokb=\toks36
-\t@pgf@tokc=\toks37
+\t@pgf@toka=\toks41
+\t@pgf@tokb=\toks42
+\t@pgf@tokc=\toks43
 \pgf@sys@id@count=\count304
  (C:\Users\User\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgf.cfg
 File: pgf.cfg 2023-01-15 v3.1.10 (3.1.10)
@@ -435,9 +446,9 @@ Package: pgfcore 2023-01-15 v3.1.10 (3.1.10)
 \pgfmath@dimen=\dimen188
 \pgfmath@count=\count308
 \pgfmath@box=\box58
-\pgfmath@toks=\toks38
-\pgfmath@stack@operand=\toks39
-\pgfmath@stack@operation=\toks40
+\pgfmath@toks=\toks44
+\pgfmath@stack@operand=\toks45
+\pgfmath@stack@operation=\toks46
 ) (C:\Users\User\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.code.tex) (C:\Users\User\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.basic.code.tex) (C:\Users\User\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.trigonometric.code.tex) (C:\Users\User\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.random.code.tex) (C:\Users\User\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.comparison.code.tex) (C:\Users\User\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.base.code.tex) (C:\Users\User\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.round.code.tex) (C:\Users\User\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.misc.code.tex) (C:\Users\User\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.integerarithmetics.code.tex) (C:\Users\User\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathcalc.code.tex) (C:\Users\User\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfloat.code.tex
 \c@pgfmathroundto@lastzeros=\count309
 )) (C:\Users\User\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfint.code.tex) (C:\Users\User\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorepoints.code.tex
@@ -516,13 +527,13 @@ Package: pgfcomp-version-0-65 2023-01-15 v3.1.10 (3.1.10)
 \pgf@nodesepend=\dimen270
 ) (C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/pgf/compatibility\pgfcomp-version-1-18.sty
 Package: pgfcomp-version-1-18 2023-01-15 v3.1.10 (3.1.10)
-)) (C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\pgffor.sty
-(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\pgfkeys.sty (C:\Users\User\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfkeys.code.tex)) (C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/pgf/math\pgfmath.sty (C:\Users\User\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmath.code.tex)) (C:\Users\User\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgffor.code.tex
+))
+(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\pgffor.sty (C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\pgfkeys.sty (C:\Users\User\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfkeys.code.tex)) (C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/pgf/math\pgfmath.sty (C:\Users\User\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmath.code.tex)) (C:\Users\User\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgffor.code.tex
 Package: pgffor 2023-01-15 v3.1.10 (3.1.10)
 \pgffor@iter=\dimen271
 \pgffor@skip=\dimen272
-\pgffor@stack=\toks41
-\pgffor@toks=\toks42
+\pgffor@stack=\toks47
+\pgffor@toks=\toks48
 )) (C:\Users\User\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz\tikz.code.tex
 Package: tikz 2023-01-15 v3.1.10 (3.1.10)
  (C:\Users\User\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgflibraryplothandlers.code.tex
@@ -568,22 +579,23 @@ LaTeX Info: Redefining \cpagerefrange on input line 2370.
 LaTeX Info: Redefining \Cpagerefrange on input line 2370.
 LaTeX Info: Redefining \labelcref on input line 2370.
 LaTeX Info: Redefining \labelcpageref on input line 2370.
+Package cleveref Info: `amsthm' support loaded on input line 3026.
 ) (C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/titlesec\titlesec.sty
 Package: titlesec 2025/01/04 v2.17 Sectioning titles
 \ttl@box=\box68
-\beforetitleunit=\skip75
-\aftertitleunit=\skip76
+\beforetitleunit=\skip78
+\aftertitleunit=\skip79
 \ttl@plus=\dimen282
 \ttl@minus=\dimen283
-\ttl@toksa=\toks43
+\ttl@toksa=\toks49
 \titlewidth=\dimen284
 \titlewidthlast=\dimen285
 \titlewidthfirst=\dimen286
 ) (C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/titling\titling.sty
 Package: titling 2009/09/04 v2.1d maketitle typesetting
-\thanksmarkwidth=\skip77
-\thanksmargin=\skip78
-\droptitle=\skip79
+\thanksmarkwidth=\skip80
+\thanksmargin=\skip81
+\droptitle=\skip82
 ) (C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/fontspec\fontspec.sty
 Package: fontspec 2022/01/15 v2.8a Font selection for XeLaTeX and LuaLaTeX
  (C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/fontspec\fontspec-xetex.sty
@@ -640,8 +652,8 @@ Package: xfp 2023-08-29 L3 Floating point unit
 
 Loading lettrine.cfg
 (C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/lettrine\lettrine.cfg)
-\Lettrine@tweaks=\toks44
-\Llist@everypar=\toks45
+\Lettrine@tweaks=\toks50
+\Llist@everypar=\toks51
 ) (C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/csquotes\csquotes.sty
 Package: csquotes 2024-04-04 v5.2o context-sensitive quotations (JAW)
 \csq@reset=\count337
@@ -650,7 +662,7 @@ Package: csquotes 2024-04-04 v5.2o context-sensitive quotations (JAW)
 \csq@qlevel=\count340
 \csq@maxlvl=\count341
 \csq@tshold=\count342
-\csq@ltx@everypar=\toks46
+\csq@ltx@everypar=\toks52
  (C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/csquotes\csquotes.def
 File: csquotes.def 2024-04-04 v5.2o csquotes generic definitions (JAW)
 )
@@ -723,14 +735,14 @@ Package: ifthen 2022/04/13 v1.1d Standard LaTeX ifthen package (DPC)
 \blx@sectionciteorderinternal@0=\count384
 \blx@entrysetcounter=\count385
 \blx@biblioinstance=\count386
-\labelnumberwidth=\skip80
-\labelalphawidth=\skip81
-\biblabelsep=\skip82
-\bibitemsep=\skip83
-\bibnamesep=\skip84
-\bibinitsep=\skip85
-\bibparsep=\skip86
-\bibhang=\skip87
+\labelnumberwidth=\skip83
+\labelalphawidth=\skip84
+\biblabelsep=\skip85
+\bibitemsep=\skip86
+\bibnamesep=\skip87
+\bibinitsep=\skip88
+\bibparsep=\skip89
+\bibhang=\skip90
 \blx@bcfin=\read4
 \blx@bcfout=\write4
 \blx@langwohyphens=\language80
@@ -814,20 +826,20 @@ Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
 \c@savedoriglanguage=\count455
 \c@pageref=\count456
 \c@savedpageref=\count457
-\shorthandwidth=\skip88
-\shortjournalwidth=\skip89
-\shortserieswidth=\skip90
-\shorttitlewidth=\skip91
-\shortauthorwidth=\skip92
-\shorteditorwidth=\skip93
-\locallabelnumberwidth=\skip94
-\locallabelalphawidth=\skip95
-\localshorthandwidth=\skip96
-\localshortjournalwidth=\skip97
-\localshortserieswidth=\skip98
-\localshorttitlewidth=\skip99
-\localshortauthorwidth=\skip100
-\localshorteditorwidth=\skip101
+\shorthandwidth=\skip91
+\shortjournalwidth=\skip92
+\shortserieswidth=\skip93
+\shorttitlewidth=\skip94
+\shortauthorwidth=\skip95
+\shorteditorwidth=\skip96
+\locallabelnumberwidth=\skip97
+\locallabelalphawidth=\skip98
+\localshorthandwidth=\skip99
+\localshortjournalwidth=\skip100
+\localshortserieswidth=\skip101
+\localshorttitlewidth=\skip102
+\localshortauthorwidth=\skip103
+\localshorteditorwidth=\skip104
 Package biblatex Info: Trying to load enhanced support for Unicode engines...
 Package biblatex Info: ... file 'blx-unicode.def' found.
  (C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/biblatex\blx-unicode.def)
@@ -1146,12 +1158,12 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 36366 strings out of 410378
- 716255 string characters out of 5788234
+ 36441 strings out of 410378
+ 717328 string characters out of 5788234
  1929416 words of memory out of 5000000
- 57203 multiletter control sequences out of 15000+600000
- 570531 words of font info for 110 fonts, out of 8000000 for 9000
+ 57272 multiletter control sequences out of 15000+600000
+ 570539 words of font info for 111 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 84i,15n,93p,731b,4806s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 84i,18n,93p,731b,4807s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on main.xdv (7 pages, 83192 bytes).
+Output written on main.xdv (7 pages, 92156 bytes).
