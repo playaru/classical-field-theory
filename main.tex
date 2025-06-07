@@ -24,6 +24,8 @@
 \usepackage{lettrine}
 \usepackage{csquotes}
 \usepackage{footnote}
+\usepackage{manyfoot}
+\usepackage{cancel}
 
 %bib
 \usepackage[backend=biber, style=numeric-comp, sorting=none]{biblatex}
@@ -47,14 +49,19 @@
   {0pt}                      % Espaço entre rótulo e título
   {}                         % Código a ser inserido antes do título
 
-% --- CONFIGURAÇÃO DA FONTE ORNAMENTADA (MÉTODO LOCAL) ---
+
+% Notas de Rodapé
+\DeclareNewFootnote{B}[fnsymbol]
+
+
+% --- CONFIGURAÇÃO DA FONTE CHIQUE (MÉTODO LOCAL) ---
 % Usamos a opção "Path" para indicar a pasta onde a fonte está.
 % O comando agora procura pelo NOME DO ARQUIVO, não pelo nome da família.
 \newfontfamily{\capitular}[
   Path = ./,  % Indica a subpasta.
   Extension = .ttf % Opcional, mas boa prática.
 ]{Woodcut1}
-
+%---------------------------------------------------------------------------------------------%
 
 \begin{document}
 
@@ -106,7 +113,7 @@
 
 \newpage
 
-\section*{Convenções e Notação}
+\section*{Convenções e Notação}\label{Conv_e_Not}
 \addcontentsline{toc}{section}{Convenções e Notação}
 
 
@@ -159,54 +166,100 @@ entender a motivação por trás dos postulados, vale conferir o primeiro parág
 Devido aos postulados, surge de forma natural um tratamento equivalente de espaço e tempo na relatividade
 especial, antes vistos como dois entes totalmente separados e independentes. Em outras palavras, devido à demanda
 de que as leis da Física sejam covariantes por Lorentz, acabamos, inevitavelmente, por tratar espaço e tempo de
-forma equivalente, fundindo-os no mesmo objeto que denominamos de \enquote{espaço-tempo}. Cada ponto desse
+forma equivalente, fundindo-os no mesmo objeto que denominamos de \textbf{espaço-tempo}. Cada ponto desse
 espaço-tempo, assinalado pelas coordenadas $(t,\vec{x})$, ou $(t,r,\theta,\varphi)$, ou qualquer outro sistema genérico de
-coordenadas é chamado de \enquote{Evento} nesse espaço-tempo.
+coordenadas é chamado de \textbf{evento} nesse espaço-tempo.
 
 Nessa nova forma de tratar o espaço e o tempo, de modo que as leis Físicas não mudem sob mudanças de referenciais
-inerciais, acabamos introduzindo uma nova métrica, isto é, uma nova forma de \enquote{medir distâncias} nesse novo
+inerciais, acabamos introduzindo uma \textbf{nova métrica}, isto é, uma nova forma de \enquote{medir distâncias} nesse novo
 \enquote{espaço} construído a partir dessa \enquote{fusão} entre espaço e tempo. Essa nova métrica é dada
 por $\mathrm{ds^2}$, que não é para ser entendida como \enquote{um número pequeno elevado ao quadrado}, mas sim 
 como um objeto por si só, que dita a medida das \enquote{distâncias} nesse espaço-tempo.
-Em coordenadas cartesianas para um espaço-tempo plano, a métrica é dada por:
+Em coordenadas cartesianas para um espaço-tempo plano, sua métrica é dada por:
 \begin{equation*}
   ds^2 = -dt^2 + d\vec{x}^2
 \end{equation*}
 onde $d\vec{x}^2$ representa $dx^2 + dy^2 + dz^2$ para o espaço tridimensional (notação boba). Novamente,
-$\mathrm{dt}$ e $\mathrm{dx}$ não representam \enquote{infinitesimais}, mas podem ser entendidos como tal a um primeiro momento;
+$\mathrm{dt}$ e $\mathrm{dx}$ não representam \enquote{infinitesimais}, mas podem ser entendidos como tal num primeiro momento;
 mais adiante, pretendemos esclarecer o real significado matemático que esses objetos carregam, quando formos
 descrever a métrica de forma tensorial\footnote{Uma generalização de matrizes, ou melhor, de vetores; nada assustador.}.
 
 \subsection{Invariância do Intervalo}
 
-Em espaços euclidianos, integramos um elemento de arco\footnote{Obtido a partir da métrica euclidiana: $ds = \sqrt{dx^2 + dy^2}$ , que é a raiz quadrada da métrica euclidiana.} $\mathrm{ds}$
-ao longo de uma curva $C$ para obtermos o comprimento de arco dessa curva. De forma completamente análoga,
-o comprimento de arco de uma curva $C$ no espaço-tempo também é dado pela integral do elemento de arco\footnote{Mais adiante mostraremos como obter o elemento de arco a partir da métrica; adiantamos que não é tão trivial quanto em espaços euclidianos, onde basta tirar a raiz quadrada da métrica. O espaço-tempo guarda algumas nuâncias...} 
-$\mathrm{ds}$ ao longo da mesma:
+Em espaços euclidianos, integramos um \textbf{elemento de arco}\footnoteB{Obtido a partir da métrica euclidiana: $ds = \sqrt{dx^2 + dy^2}$ , que é a raiz quadrada da métrica euclidiana.} $\mathrm{ds}$
+ao longo de uma curva $C$ para obtermos o \textbf{comprimento de arco} dessa curva. De forma completamente análoga,
+isso também vale para espaços-tempos\footnote{Mais adiante mostraremos como obter o elemento de arco a partir da métrica em espaços-tempos; adiantamos que não é tão trivial quanto em espaços euclidianos, onde basta tirar a raiz quadrada da métrica. O espaço-tempo guarda algumas nuâncias...}:
 \begin{equation}
-  S \equiv \int_{C} ds 
+  S \equiv \int_{C} ds .
 \end{equation}
 
 E as semelhanças não param por aí: assim como distâncias são preservadas em espaços euclidianos ao mudarmos de sistema de coordenadas, o comprimento
-de um arco no espaço-tempo é o mesmo, independente do sistema de coordenadas adotado:
+de um arco no espaço-tempo é o mesmo, independente do sistema de coordenadas adotado, ou seja:
 \begin{equation}
   S = S' 
   \label{2}
 \end{equation}
-para toda curva $C$ nesse espaço-tempo, e para quaisquer sistemas de coordenadas que se relacionam por
-transformações de Lorentz (\enquote{com linha} e \enquote{sem linha} denotam referenciais diferentes). Para
-provar a afirmação (\ref{2}), considere a forma explícita da transformação de Lorentz que faz a passagem de
-um referencial que observa os eventos do espaço-tempo com as coordenadas $\mathrm{(t,x)}$ para um outro que
+para a mesma curva $C$ nesse espaço-tempo, e para quaisquer sistemas de coordenadas que se relacionam por
+transformações de Lorentz (\enquote{com linha} e \enquote{sem linha} denotam referenciais diferentes). 
+
+Para provar a afirmação em (\ref{2}), é suficiente mostrar que o elemento
+de arco $ds$ é o mesmo que seu correspondente $ds'$ no outro referencial em cada ponto da curva. Mas como temos posse apenas da métrica,
+e sabemos que, de uma forma padronizada para ambos os referenciais, os elementos de arco $ds$ e $ds'$ são obtidos a partir das suas respectivas métricas, basta mostrar que:
+\begin{equation*}
+  ds^2 = ds^{\prime \; 2} \Rightarrow ds = ds' \Rightarrow S = S'
+\end{equation*}
+Sendo essa uma condição suficiente (apesar de não necessária) para provar a invariância do arco de uma curva situada no
+espaço-tempo. 
+Considere então a métrica descrita pelos referenciais sem linha e com linha:
+\begin{equation}
+  ds^2 = -dt^2 + dx^2 \;\;\;\;;\;\;\;\;\; ds^{\prime\; 2} = -dt^{\prime\; 2} + dx^{\prime\; 2}.
+  \label{eq:intervalos}
+\end{equation}
+Para encontrar a relação entre as métricas, seria bom obter as relações entre os sistemas de coordenadas (t,x) e (t',x'),
+pois conseguiremos relacionar $dt^{\prime \; 2}$ com $dt^2$ e $dx^{\prime \; 2}$ com $dx^2$.
+
+Para isso, vamos   usar a forma explícita da transformação de Lorentz que faz a passagem de
+um referencial que observa os eventos do espaço-tempo\footnote{Tomamos um espaço-tempo bidimensional (uma coordenada temporal, outra espacial) por simplicidade.} com as coordenadas $\mathrm{(t,x)}$ para um outro que
 os observa com as coordenadas $\mathrm{(t',x')}$.
 \begin{equation*}
   \Lambda = \begin{pmatrix*} \mathrm{\gamma} &  \mathrm{-\gamma v}\\
                           \mathrm{-\gamma v} & \mathrm{\gamma}  \end{pmatrix*}
 \end{equation*}
-onde $\mathrm{v}$ é a velocidade relativa entre os dois referenciais, e $\gamma$ é o fator de Lorentz, dado por
-$\gamma = \mathrm{(1-v^2)^{-1/2}}$. Considere então a métrica descrita pelos referenciais sem linha e com linha:
+onde $\mathrm{v}$ é o módulo da velocidade relativa entre os dois referenciais, e $\gamma$ é o fator de Lorentz, dado por
+$\gamma = \mathrm{(1-v^2)^{-1/2}}$. Em notação de índices, podemos expressar a relação entre os dois sistemas 
+de coordenadas na forma:
 \begin{equation*}
-  ds^2 = -dt^2 + dx^2 \;\;\;\;;\;\;\;\;\; ds^{\prime\; 2} = -dt^{\prime\; 2} + dx^{\prime\; 2}
+x^{\mu'} = \Lambda^{\mu'}_{\mu} x^{\mu}
 \end{equation*}
+que é basicamente a atuação da matriz de $\Lambda$ nos vetores coluna coordenados escrita em termos das componentes (c.f. \ref{Conv_e_Not}{§ Convenções e Notação}, p. 1).
+
+Assim, obtemos:
+\begin{gather*}
+  \left.
+  \begin{aligned}
+    &   t' = \gamma(t - \mathrm{v}t) \\
+    &   x' = \gamma(-\mathrm{v}t + x) 
+  \end{aligned}\;\;
+  \right\rangle\;\;\;\;
+  \begin{aligned}
+    & dt' = \gamma(-\mathrm{v}dt +dx)\\
+    & dx' = \gamma(dt - \mathrm{v}dx)
+  \end{aligned}\\\\
+  \therefore 
+  \left\{\;
+  \begin{aligned}
+    & dt^{\prime\;2} = \gamma^2(\mathrm{v}^2dt^2 + dx^2 - 2\mathrm{v}dtdx)\\
+    & dx^{\prime\;2} = \gamma^2(dt^2 + \mathrm{v}^2dx^2 - 2\mathrm{v}dtdx)
+  \end{aligned}\right.
+\end{gather*}
+
+Inserindo essas expressões na equação (\ref{eq:intervalos}) para o referencial com linha, concluímos:
+\begin{align}
+  ds^{\prime\; 2} &= -dt^{\prime\; 2} + dx^{\prime\; 2} \nonumber \\
+                  &= -\gamma^2(\mathrm{v}^2dt^2 + dx^2 - 2\mathrm{v}dtdx) + \gamma^2(dt^2 + \mathrm{v}^2dx^2 - 2\mathrm{v}dtdx) \nonumber \\
+                  &=  
+\end{align}
+
 
 \section{Introdução ao Princípio Variacional}
 
