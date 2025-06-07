@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (MiKTeX 23.10) (preloaded format=xelatex 2024.6.6)  7 JUN 2025 00:34
+This is XeTeX, Version 3.141592653-2.6-0.999995 (MiKTeX 23.10) (preloaded format=xelatex 2024.6.6)  7 JUN 2025 01:14
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1115,6 +1115,9 @@ Package lettrine.sty Info: Targeted height = 35.168pt
 (lettrine.sty)             reported on input line 143.
 
 
+Package hyperref Warning: Suppressing empty link on input line 187.
+
+
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
 (fancyhdr)                \setlength{\headheight}{14.49998pt}.
@@ -1123,9 +1126,6 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 [3]
 
-Package hyperref Warning: Suppressing empty link on input line 234.
-
-
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
 (fancyhdr)                \setlength{\headheight}{14.49998pt}.
@@ -1133,6 +1133,9 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [4]
+
+Package hyperref Warning: Suppressing empty link on input line 241.
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1158,12 +1161,12 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 36441 strings out of 410378
- 717328 string characters out of 5788234
+ 36444 strings out of 410378
+ 717320 string characters out of 5788234
  1929416 words of memory out of 5000000
- 57272 multiletter control sequences out of 15000+600000
+ 57275 multiletter control sequences out of 15000+600000
  570539 words of font info for 111 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  84i,18n,93p,731b,4807s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on main.xdv (7 pages, 92156 bytes).
+Output written on main.xdv (7 pages, 98632 bytes).
